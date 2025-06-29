@@ -1,0 +1,68 @@
+body {
+    background-color: #0d0d0d; /* Define o fundo da página como preto escuro */
+    color: #d0f0f0; /* Cor padrão do texto no corpo da página */
+    display: flex; /* Ativa o Flexbox para alinhar os elementos */
+    justify-content: center; /* Centraliza horizontalmente os elementos */
+    align-items: center; /* Centraliza verticalmente os elementos */
+    flex-direction: column; /* Organiza os elementos em coluna (um embaixo do outro) */
+    height: 100vh; /* Altura do body é 100% da altura da tela */
+    text-align: center; /* Centraliza o texto dentro dos elementos */
+}
+
+.titulo {
+    font-size: 4rem; /* Define o tamanho da fonte do título como grande */
+    margin-bottom: 30px; /* Espaçamento inferior de 30px abaixo do título */
+    color: #b3ffff; /* Cor azul clara para o título */
+}
+
+#cronometro {
+    font-size: 10rem; /* Deixa os números do cronômetro bem grandes */
+    font-weight: bold; /* Deixa os números em negrito */
+    margin-bottom: 40px; /* Espaçamento inferior de 40px abaixo do cronômetro */
+    color: #e0e0e0; /* Cor dos números do cronômetro (cinza claro) */
+    cursor: pointer; /* Mostra o ponteiro de clique ao passar sobre o cronômetro */
+}
+
+button {
+    padding: 20px 40px; /* Aumenta o espaço interno dos botões (altura x largura) */
+    margin: 15px; /* Espaçamento externo em volta dos botões */
+    font-size: 1.5rem; /* Aumenta o tamanho do texto dos botões */
+    font-weight: bold; /* Deixa o texto dos botões em negrito */
+    border: none; /* Remove a borda padrão do botão */
+    border-radius: 10px; /* Deixa os cantos do botão arredondados */
+    cursor: pointer; /* Muda o cursor ao passar por cima do botão */
+    transition: 0.3s; /* Animações suaves em 0.3 segundos (ex: no hover) */
+    cursor: pointer; /* (duplicado, mas não afeta o funcionamento) */
+}
+
+button:hover {
+    opacity: 0.85; /* Quando passa o mouse, o botão fica levemente transparente */
+}
+
+button:nth-child(3) {
+    background-color: #00e6b8; /* Cor de fundo verde-água para o botão 1 (Start) */
+    color: #000; /* Cor do texto preta */
+}
+
+button:nth-child(4) {
+    background-color: #ff4d6d; /* Cor de fundo vermelha para o botão 2 (Stop) */
+    color: #fff; /* Cor do texto branca */
+}
+
+button:nth-child(5) {
+    background-color: #3333ff; /* Cor de fundo azul para o botão 3 (Restart) */
+    color: #fff; /* Cor do texto branca */
+}
+
+section{
+      position: fixed;  /* fixa na tela, mesmo quando rolar */
+     bottom: 10px;     /* distância do rodapé */
+     left: 10px;       /* distância da borda esquerda */
+     top: 0px;
+     opacity: 20%;
+     cursor: pointer;
+}
+
+section:hover{
+    opacity: 100%;
+}
